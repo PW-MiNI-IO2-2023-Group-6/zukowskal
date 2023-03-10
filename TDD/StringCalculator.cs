@@ -20,7 +20,7 @@ namespace TDD
                 customSeparator = str[2];
             }
 
-            var values = customSeparator != null ? str[4..].Split(',', '\n', customSeparator.Value) : str.Split(',', '\n');
+            var values = customSeparator != null ? str[4..].Split('\n', customSeparator.Value) : str.Split(',', '\n');
             int sum = 0;
             foreach (var v in values)
             {
